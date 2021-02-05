@@ -13,7 +13,7 @@ body{
 #header{
     width: 100%;
     overflow: hidden;
-    background: #e63c35;
+    background: #ff8b22;
     padding: 6px 0;
     z-index: 2;
     margin-bottom: 24px;
@@ -80,7 +80,7 @@ h1{
 */
 
 h2{
-    color: #e63c35;
+    color: #ff8b22;
 }
 
 p{
@@ -194,6 +194,10 @@ img{
     float: left;
 }
 
+.sp-image{
+    display: none;
+}
+
 iframe{
     float: left;
 }
@@ -218,14 +222,14 @@ iframe{
     margin-bottom: 16px;
     color: #555;
     font-weight: 400;
-    border-left: 6px solid #e63c35;
+    border-left: 6px solid #ff8b22;
 }
 
 p.new{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #e63c35;
+    background-color: #ff8b22;
     color: white;
     text-align: center;
     line-height: 65px;
@@ -287,7 +291,7 @@ p.new{
 #content2 .flip-animation .caption{
     position: absolute;
     padding: 20px;
-    background: #e63c35;
+    background: #ff8b22;
     height: 185px;
     width: 100px;
     
@@ -344,4 +348,44 @@ p.new{
 #content2 .flip-animation .caption h3{
     color: white;
     font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+
+    .main_visual{
+        background-position: 25% 0%;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+        padding: 0 calc((100% - 363.53px) / 2);
+    }
+    
+    #main{
+        padding: 0;
+        width: 100%;
+    }
+    
+    img, .flip-animation{
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .right-box, .left-box, #sidebar{
+        width: calc(100% - 32px);
+        margin: 16px;
+    }
+    
+    .sp-image{
+        display: block;
+    }
+    
+    .std-image{
+        display: none;
+    }
 }
