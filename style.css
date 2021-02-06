@@ -1,7 +1,76 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, "Roboto", "Helvetica Neue", "Droid Sans",
+        "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ",
+        "Osaka", "MS PGothic", arial, sans-serif;
+}
+
+.op-txt {
+    font-size: 28px;
+    animation-name: op;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.6s;
+}
+
+.op-txt1{
+    animation-delay: 0.1s;
+}
+
+.op-txt2{
+    animation-delay: 0.2s;
+}
+
+.op-txt3{
+    animation-delay: 0.3s;
+}
+
+.op-txt4{
+    animation-delay: 0.4s;
+}
+
+.op-txt5{
+    animation-delay: 0.5s;
+}
+
+.op-txt6{
+    animation-delay: 0.6s;
+}
+
+@keyframes op {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
 }
 
 body{
@@ -17,6 +86,24 @@ body{
     padding: 6px 0;
     z-index: 2;
     margin-bottom: 24px;
+}
+
+.st0{
+    fill:none;
+    stroke:#000000;
+    stroke-width:14;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
+
+.st1{
+    fill:none;
+    stroke:#000000;
+    stroke-width:19;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
 }
 
 nav{
@@ -43,6 +130,10 @@ nav a{
 
 nav a:hover{
     border-bottom: 3px solid #f9f9f9;
+}
+
+.sp-title{
+  display: none;
 }
 
 .main_visual{
@@ -107,6 +198,7 @@ a.fbbutton:hover{
 }
 */
 
+/*
 #main a.fbbutton{
     font-size: 16px;
     color: #3b5998;
@@ -189,6 +281,7 @@ a.fbbutton:hover{
     -o-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
 }
+*/
 
 img{
     float: left;
@@ -256,7 +349,8 @@ p.new{
     width: 280px;
     margin: 0px 12px;
     background-color: #fff;
-    padding: 8px;
+    padding: 24px 8px;
+    font-size: 16px;
 }
 
 #sidebar img{
@@ -267,11 +361,7 @@ p.new{
     font-size: 20px;
     margin-bottom: 8px;
 }
-
-#sidebar{
-    font-size: 16px;
-}
-
+/*
 .flip-animation{
     position: relative;
     width: 300px;
@@ -349,8 +439,62 @@ p.new{
     color: white;
     font-size: 15px;
 }
+*/
+
+.sns_btn_wrap{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.sns_btn {
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  position: relative;
+  font-size: 50px;
+  border-radius: 0.3125em;
+  box-shadow: 0 0.1em 0.3125em 0 rgba(0, 0, 0, 0.35);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  animation: 1.1s linear 0s 1 normal both running KBCphb;
+}
+
+.sns_btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.35);
+}
+
+.sns_btn svg{
+  margin: 20px;
+  fill: #fff;
+}
+
+.btn_twitter{
+  background-color: #1da1f2;
+}
+
+.btn_facebook{
+  background-color: #4267B2;
+}
+
+.btn_github{
+  background-color: #333;
+}
 
 @media screen and (max-width:768px) {
+  
+    .sp-title{
+      display: block;
+      color: #fff;
+      text-align: center;
+      background: #ff8b22;
+      padding: 12px;
+    }
 
     .main_visual{
         background-position: 25% 0%;
@@ -363,6 +507,10 @@ p.new{
     nav{
         width: 100%;
         padding: 0 calc((100% - 363.53px) / 2);
+    }
+  
+    .main_visual{
+      background-image: url(images/header-sp.jpg);
     }
     
     #main{
