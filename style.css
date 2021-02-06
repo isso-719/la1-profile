@@ -486,6 +486,13 @@ p.new{
   background-color: #333;
 }
 
+footer{
+  color: #777;
+  clear: left;
+  padding:36px 0;
+  text-align: center;
+}
+
 @media screen and (max-width:768px) {
   
     .sp-title{
