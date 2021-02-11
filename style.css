@@ -149,16 +149,27 @@ header h1::after {
 
 .content h1{
     font-size: 48px;
-    text-align: center;
+    /* text-align: center; */
+    margin-bottom: 24px;
+}
+
+.content h1 span{
+    border-left: 10px solid #000;
+    padding: 4px 10px;
+}
+
+.content p{
+    margin: 16px 0;
 }
 
 .sns_btn_wrap{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    max-width: 320px;
 }
 
 .sns_btn {
+    margin-top: 24px;
     color: #fff;
     height: 80px;
     width: 80px;
@@ -209,6 +220,13 @@ header h1::after {
 	color: #fff;
 }
 
+footer{
+    color: #777;
+    clear: left;
+    padding:36px 0;
+    text-align: center;
+}
+
 @media screen and (max-width:768px) {
 
     header{
@@ -216,20 +234,25 @@ header h1::after {
     }
 
     .content-wrap{
-        max-width: 320px;
+        padding: 0 40px;
     }
 
     .content{
-        width: 100%;
+        width: calc(100% - 20px);
+        padding: 10px;
     }
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
 
     header h1{
         font-size: 4em;
         color: #fff;
+    }
+
+    .content-wrap{
+        padding: 0 4px;
     }
 
     .menu-box{
@@ -242,6 +265,16 @@ header h1::after {
         font-size: 16px;
         line-height: 24px;
         padding: 0 4px;
+    }
+
+    .content h1{
+        font-size: 32px;
+        /* text-align: center; */
+        margin-bottom: 24px;
+    }
+
+    .std-image{
+        width: 100%;
     }
 
 }
