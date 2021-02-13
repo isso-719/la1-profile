@@ -145,10 +145,12 @@ header h1::after {
 }
 
 .content-wrap {
+    max-width: 1504px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .content {
@@ -194,10 +196,12 @@ header h1::after {
 .sns_btn_wrap{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 476px;
+    margin: 0 auto;
 }
 
 .sns_btn {
-    margin-top: 24px;
     color: #fff;
     height: 80px;
     width: 80px;
